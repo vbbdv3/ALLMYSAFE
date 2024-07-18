@@ -1,0 +1,4 @@
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(x,y,z))
+
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(game.Workspace.Part.Position))
+
