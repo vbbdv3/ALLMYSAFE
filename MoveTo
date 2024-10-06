@@ -2,3 +2,6 @@ game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(x,y,z))
 
 game.Players.LocalPlayer.Character.Humanoid:MoveTo(game.Workspace.Part.Position)
 
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(100, 100, 100)) -- идти к координатам
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(part) -- идти за мобом
+
