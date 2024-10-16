@@ -42,3 +42,15 @@ end)
 local mod = main:Button("ОСТАНОВИТЬ ВСЕ ГАВНО", function()local mod = main:Button("Spin Ninja", function()
 getgenv().on = false
 end)
+
+
+
+КНОПКА   !!!!
+
+
+function onKeyPress(inputObject, gameProcessedEvent) 
+if inputObject.KeyCode == Enum.KeyCode.G then -- тут кнопка вместо G
+--ТУТ ГОВНО
+end 
+end
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
