@@ -5,3 +5,14 @@ game.Players.LocalPlayer.Character.Humanoid:MoveTo(game.Workspace.Part.Position)
 game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(100, 100, 100)) -- идти к координатам
 game.Players.LocalPlayer.Character.Humanoid:MoveTo(part) -- идти за мобом
 
+
+
+getgenv().on = true
+while true do
+    if not on then break end
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-1429.397216796875, 47.88515853881836, 1155.3564453125))
+wait(2)
+game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-1419.4244384765625, 47.885223388671875, 927.94970703125))
+wait(2.5)
+end
+
