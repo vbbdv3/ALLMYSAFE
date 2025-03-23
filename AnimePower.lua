@@ -2,117 +2,57 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("discord library")
 
-local serv = win:Server("Preview", "")
+local serv = win:Server("Anime_Power", "")
 
 local btns = serv:Channel("Buttons")
 
-btns:Button("Kill all", function()
-DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("Get max level", function()
-DiscordLib:Notification("Notification", "Max level!", "Okay!")
-end)
-
-local tgls = serv:Channel("Toggles")
-
-tgls:Toggle("Auto-Farm",false, function(bool)
-print(bool)
-end)
-
-local sldrs = serv:Channel("Sliders")
-
-local sldr = sldrs:Slider("Slide me!", 0, 1000, 400, function(t)
-print(t)
-end)
-
-sldrs:Button("Change to 50", function()
-sldr:Change(50)
-end)
-
-local drops = serv:Channel("Dropdowns")
-
-
-local drop = drops:Dropdown("Pick me!",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(bool)
-print(bool)
-end)
-
-drops:Button("Clear", function()
-drop:Clear()
-end)
-
-drops:Button("Add option", function()
-drop:Add("Option")
-end)
-
-local clrs = serv:Channel("Colorpickers")
-
-clrs:Colorpicker("ESP Color", Color3.fromRGB(255,1,1), function(t)
-print(t)
-end)
-
-local textbs = serv:Channel("Textboxes")
-
-textbs:Textbox("Gun power", "Type here!", true, function(t)
-print(t)
-end)
-
-local lbls = serv:Channel("Labels")
-
-lbls:Label("This is just a label.")
-
-local bnds = serv:Channel("Binds")
-
-bnds:Bind("Kill bind", Enum.KeyCode.RightShift, function()
-print("Killed everyone!")
-end)
-
-serv:Channel("by dawid#7205")
-
-
-win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
-
 btns:Button("ShadowsEgg", function()
-_G.shadowsegg_enabled = not _G.shadowsegg_enabled
-while _G.shadowsegg_enabled do
+getgenv().on = true
+while true do
+    if not on then break end
 local args = {
     [1] = "rollChampion",
     [2] = "one",
     [3] = "shadows city"
 }
-game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
+game:Button("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+        end
 end)
 
 btns:Button("Roll_Swords", function()
-_G.RollSwords_enabled = not _G.RollSwords_enabled
-while _G.RollSwords_enabled do
+getgenv().on = true
+while true do
+    if not on then break end
 local args = {
     [1] = "rollSwords",
     [2] = "one"
 }
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+        end
 end)
 
 btns:Button("Roll_Lineages", function()
-_G.rollLineages_enabled = not _G.rollLineages_enabled
-while _G.rollLineages_enabled do
+getgenv().on = true
+while true do
+    if not on then break end
 local args = {
     [1] = "rollLineages"
 }
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+        end
 end)
 
 btns:Button("Roll_Hakis", function()
-_G.rollHakis_enabled = not _G.rollHakis_enabled
-while _G.rollHakis_enabled do
+getgenv().on = true
+while true do
+    if not on then break end
 local args = {
     [1] = "rollHakis"
 }
 game:GetService("ReplicatedStorage").Shared.events.RemoteEvent:FireServer(unpack(args))
 wait(0.1)
+        end
 end)
