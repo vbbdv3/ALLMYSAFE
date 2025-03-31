@@ -54,3 +54,7 @@ game:GetService("ReplicatedStorage").Remotes.Click:FireServer()
 wait(0.01)
         end
 end)
+
+btns:Button("STOP", function()
+ getgenv().on = false
+ end)
